@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Device configuration setting the /proc/sys/vm/extra_free_kbytes.
+         Value 0 prevents keeping any extra memory over what the kernel
+         keeps by default. -->
+    <integer name="config_extraFreeKbytesAbsolute">0</integer>
+
+    <!-- Launcher Go customization requires AppWidgetService, but otherwise
+         home screen widgets are not supported -->
+    <bool name="config_enableAppWidgetService">true</bool>
+
+    <!-- Disable WiFi Debugging -->
+    <bool translatable="false"
+          name="config_wifi_enable_wifi_firmware_debugging">false</bool>
+    <integer translatable="false"
+          name="config_wifi_logger_ring_buffer_verbose_size_limit_kb">64</integer>
+
+    <!-- Enable zram writeback -->
+    <bool name="config_zramWriteback">true</bool>
+
+    <!-- Disable multiuser for AGO projects -->
+    <integer name="config_multiuserMaximumUsers">1</integer>
+    <bool name="config_enableMultiUserUI">false</bool>
+
+    <!-- Launcher - enable gesture navigation -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
+    <!-- Launcher - configure high/low-res scales for task snapshots -->
+    <item name="config_highResTaskSnapshotScale" format="float" type="dimen">0.8</item>
+    <item name="config_lowResTaskSnapshotScale" format="float" type="dimen">0.3</item>
+
+    <!-- Launcher - configure 16-bit task snapshots -->
+    <bool name="config_use16bittasksnapshotpixelformat">true</bool>
+</resources>

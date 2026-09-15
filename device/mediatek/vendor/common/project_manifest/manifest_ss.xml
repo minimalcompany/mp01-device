@@ -1,0 +1,39 @@
+<manifest version="1.0" type="device">
+   <hal format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+            <instance>imsAospSlot1</instance>
+            <instance>se1</instance>
+            <instance>em1</instance>
+        </interface>
+        <interface>
+            <name>ISap</name>
+            <instance>slot1</instance>
+        </interface>
+        <fqname>@1.6::IRadio/slot1</fqname>
+        <fqname>@1.6::IRadio/imsAospSlot1</fqname>
+        <fqname>@1.6::IRadio/se1</fqname>
+        <fqname>@1.6::IRadio/em1</fqname>
+    </hal>
+   <hal format="hidl">
+        <name>vendor.mediatek.hardware.mtkradioex</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IMtkRadioEx</name>
+            <instance>mtkSlot1</instance>
+            <instance>imsSlot1</instance>
+            <instance>mtkSe1</instance>
+            <instance>mtkEm1</instance>
+            <instance>mtkAssist1</instance>
+            <instance>mtkRcs1</instance>
+            <instance>mtkCap1</instance>
+            <instance>mtkSmartRatSwitch1</instance>
+            <instance>mtkRsu1</instance>
+        </interface>
+    </hal>
+</manifest>

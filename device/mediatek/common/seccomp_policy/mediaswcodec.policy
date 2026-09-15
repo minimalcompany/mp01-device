@@ -1,0 +1,3 @@
+#Mediatek used system call
+clock_nanosleep: 1
+mremap: 1

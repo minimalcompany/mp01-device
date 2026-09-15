@@ -1,0 +1,28 @@
+KRN_TARGET_PROJECT := mgk_64_entry_level_k510
+KRN_BASE_PROJECT := mgk_64_entry_level_k510
+ifndef KRN_TARGET_PROJECT_FOLDER
+KRN_TARGET_PROJECT_FOLDER := $(LOCAL_PATH)
+endif
+KRN_PROJECT_FOLDER := $(KRN_TARGET_PROJECT_FOLDER)
+
+KRN_KERNEL_CONFIG_MK := $(KRN_TARGET_PROJECT_FOLDER)/KernelConfig.mk
+include $(KRN_KERNEL_CONFIG_MK)
+$(call inherit-product, $(LOCAL_PATH)/device.mk)
+
+ifndef SYS_TARGET_PROJECT
+PRODUCT_BUILD_SYSTEM_IMAGE := false
+PRODUCT_BUILD_PRODUCT_IMAGE := false
+endif
+ifndef HAL_TARGET_PROJECT
+PRODUCT_BUILD_VENDOR_IMAGE := false
+endif
+
+PRODUCT_MANUFACTURER := alps
+PRODUCT_NAME := krn_mgk_64_entry_level_k510
+PRODUCT_DEVICE := mgk_64_entry_level_k510
+PRODUCT_MODEL := mgk_64_entry_level_k510
+PRODUCT_POLICY := android.policy_phone
+PRODUCT_BRAND := alps
+
+KERNEL_DEFCONFIG ?= mgk_64_k510_defconfig
+KERNEL_DEFCONFIG_OVERLAYS := entry_level.config

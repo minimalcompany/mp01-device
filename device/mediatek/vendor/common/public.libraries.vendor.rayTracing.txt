@@ -1,0 +1,2 @@
+libOpenCL.so
+libVkLayer_mtk_rt_sdk.so

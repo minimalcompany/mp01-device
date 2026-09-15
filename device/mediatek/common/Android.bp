@@ -1,0 +1,6 @@
+cc_library_headers {
+    name: "mtk_kernel_headers.common",
+    export_include_dirs: ["kernel-headers"],
+    proprietary: true,
+    //recovery_available: true,
+}

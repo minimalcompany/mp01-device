@@ -1,0 +1,9 @@
+<dconfig name="mrdump" platform="mt6789">
+<plsetting>
+<item key="aee_enable" value="full"/>
+</plsetting>
+<dtbo><![CDATA[/dts-v1/;
+/plugin/;
+&chosen { dconfig {platform = "mt6789"; }; };
+]]></dtbo>
+</dconfig>

@@ -1,0 +1,12 @@
+<manifest version="1.0" type="device">
+    <hal override="true" format="hidl">
+        <name>vendor.mediatek.hardware.radio_op</name>
+        <transport>hwbinder</transport>
+        <version>3.0</version>
+        <interface>
+            <name>IRadioOp</name>
+            <instance>slot1</instance>
+            <instance>OpImsRILd1</instance>
+        </interface>
+    </hal>
+</manifest>

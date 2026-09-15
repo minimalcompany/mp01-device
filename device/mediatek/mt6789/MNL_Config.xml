@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mnl_config version="21111601.6.00.00" type="gps">
+
+    <feature>IFB
+        <version>1.0</version>
+        <config>1</config>
+        <format> CH:-7 to 6 </format>
+        <setting>-9.36,-8.72,-7.18,-1.51,-1.72,-5.13,-1.47,0,-0.05,0.20,-0.33,-0.18,-1.64,-2.81</setting>
+    </feature>
+    
+    <feature>GGTO
+        <version>1.0</version>
+        <config>1</config>
+        <format> GLONASS time offset, BEIDOU time offset, GALILEO time offset, NAVIC time offset, Unit: meter </format>
+        <setting>11.76,1.83,3.17,18.84</setting>
+    </feature>
+    
+    <feature>DCB
+        <version>1.0</version>
+        <config>1</config>
+        <format>L5_DCB_GPS,L5_DCB_QZSS,L5_DCB_CNSS,L5_DCB_GALILEO</format>
+        <setting>3.03,3.01,0.81,1.96</setting>
+        <format>L1C_DCB_GPS,L1C_DCB_QZSS,B1C_DCB_CNSS</format>
+        <setting>0,0,0</setting>        
+    </feature>
+    
+    <feature>L1Only
+        <version>1.0</version>
+        <config>0</config>
+        <format>L1 only: 1</format>
+        <setting>0</setting>
+    </feature>
+    
+    <feature>L5Test
+        <version>1.0</version>
+        <config>0</config>
+        <format>Search and used GPS L5 satellites according to the healthy status: 0, Search and used GPS L5 satellites regardless of its healthy status: 1</format>
+        <setting>1</setting>
+    </feature>
+
+    <feature>DisableSignal
+        <version>1.0</version>
+        <config>0</config>
+        <format>Disable B1C: 1</format>
+        <setting>0</setting>
+    </feature>    
+
+    <feature>GLP
+        <version>2.0</version>
+        <config>1</config>
+        <format>Enable</format>
+        <setting>1</setting>
+    </feature>
+
+    <feature>CAIC
+        <version>1.0</version>
+        <config>0</config>
+        <format>L1 CAIC FrequencyHz</format>
+        <setting>1560000000</setting>
+        <format>L5 CAIC FrequencyHz</format>
+        <setting>1170000000</setting>
+    </feature>
+
+    <feature>GnssMode
+        <version>1.0</version>
+        <config>0</config>
+        <format>GP+GL+BD:2, GP:3, BD:4, GP+GL+GA+BD:6, GP+GL+GA:8, GP+GL+GA+BD+NI:10</format>
+        <setting>6</setting>
+    </feature>
+
+    <feature>Bluesky
+        <version>1.0</version>
+        <config>1</config>
+        <format>enable:0,disable:1</format>
+        <setting>3</setting>
+    </feature>
+
+    <feature>CoTMS
+        <version>4.2</version>
+        <config>1</config>
+        <format>RTS,TEP</format>
+        <setting>1,3</setting>
+    </feature>
+
+    <feature>SwitchTIA
+        <version>1</version>
+        <config>1</config>
+        <format>enable:1,disable:0</format>
+        <setting>0</setting>
+    </feature>
+
+    <feature>Blanking
+        <version>1</version>
+        <config>0</config>
+        <format>enable:1,disable:0</format>
+        <setting>0</setting>
+    </feature>
+
+    <feature>MDTime
+        <version>1.0</version>
+        <config>1</config>
+        <format>featureOption,requestInterval,sizeOfWindow,syncBackNum(optional)</format>
+        <setting>1,5000,1500,0</setting>
+    </feature>
+</mnl_config>

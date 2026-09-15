@@ -1,0 +1,9 @@
+# C2K4MNR N/C/Lt/T/G
+MTK_RSC_VENDOR_PROPERTIES += \
+        ro.vendor.mtk_protocol1_rat_config=N/C/Lt/T/G \
+        ro.vendor.mtk_md1_support=26 \
+        ro.vendor.mtk_eccci_c2k=1 \
+        ro.vendor.mtk_ps1_rat=N/C/Lt/T/G \
+        ro.vendor.mtk_lte_support=1 \
+        ro.vendor.mtk_c2k_support=1 \
+        ro.telephony.default_network=33,33,33,33 \

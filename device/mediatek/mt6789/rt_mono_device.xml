@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<config>
+	<scenario name="init">
+		<ctl name="Volume_Ctrl" val="231"></ctl>
+		<ctl name="I2S Mux" val="1"></ctl>
+	</scenario>
+	<scenario name="deinit" />
+	<scenario name="speaker_on_normal">
+		<ctl name="I2S Mux" val="0"></ctl>
+	</scenario>
+	<scenario name="speaker_on_phonecall">
+		<ctl name="I2S Mux" val="0"></ctl>
+	</scenario>
+	<scenario name="speaker_on_voip">
+		<ctl name="I2S Mux" val="0"></ctl>
+	</scenario>
+	<scenario name="receiver_on_phonecall" />
+	<scenario name="receiver_on_voip" />
+	<scenario name="amp_off">
+		<ctl name="I2S Mux" val="1"></ctl>
+	</scenario>
+</config>
+

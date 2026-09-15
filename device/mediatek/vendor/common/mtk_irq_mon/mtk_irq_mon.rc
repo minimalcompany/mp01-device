@@ -1,0 +1,21 @@
+on property:persist.vendor.irqmon.enabled=1
+    write /proc/mtmon/irq_handler_tracer/tracing 1
+    write /proc/mtmon/ipi_tracer/tracing 1
+    write /proc/mtmon/hrtimer_expire_tracer/tracing 1
+    write /proc/mtmon/irq_off_tracer/tracing 1
+    write /proc/mtmon/preempt_off_tracer/tracing 1
+    write /proc/mtmon/softirq_tracer/tracing 1
+
+on property:persist.vendor.irqmon.enabled=0
+    write /proc/mtmon/irq_handler_tracer/tracing 0
+    write /proc/mtmon/ipi_tracer/tracing 0
+    write /proc/mtmon/hrtimer_expire_tracer/tracing 0
+    write /proc/mtmon/irq_off_tracer/tracing 0
+    write /proc/mtmon/preempt_off_tracer/tracing 0
+    write /proc/mtmon/softirq_tracer/tracing 0
+
+on property:persist.vendor.irqmon.count.enabled=1
+    write /proc/mtmon/irq_count_tracer/irq_count_tracer 1
+
+on property:persist.vendor.irqmon.count.enabled=0
+    write /proc/mtmon/irq_count_tracer/irq_count_tracer 0

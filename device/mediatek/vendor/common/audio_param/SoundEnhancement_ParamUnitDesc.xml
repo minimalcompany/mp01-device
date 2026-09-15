@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParamUnitDesc version="1.0">
+	<CategoryTypeList>
+		<CategoryType name="SoundEnhancement">
+			<Category name="Common"/>
+		</CategoryType>
+	</CategoryTypeList>
+	<ParamUnit>
+		<Param name="besloudness" type="int"/>
+		<Param name="hifi_audio" type="int" />
+		<Param name="voip_ainr_on" type="int" />
+		<Param name="record_ainr_on" type="int" />
+		</ParamUnit>
+</ParamUnitDesc>
